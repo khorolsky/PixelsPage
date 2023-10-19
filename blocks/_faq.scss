@@ -1,0 +1,115 @@
+.faq {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+    &__h2 {
+        font-size: 100px;
+        height: 100px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-shadow: 0 7px 2px rgb(102, 255, 102, 0.4);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px 0 rgb(44, 146, 44);
+        padding: 10px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__container.active {
+        .faq__answer {
+            display: flex;
+            transition: 0.4s;
+        }
+    }
+
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 10px 5px;
+    }
+
+    &__question-text {
+        margin-right: auto;
+    }
+
+    &__answer {
+        display: none;
+        justify-content: space-between;
+        background-color: rgb(102, 255, 102, 0.2);
+        transition: 0.1s;
+        padding: 20px 5px;
+    }
+
+    &__answer-p {
+        margin-right: auto;
+    }
+}
+
+
+@media (max-width: 730px) {
+
+    .faq {
+        font-size: 0.5em;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+
+		&__h2 {
+            font-size: 80px;
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-shadow: 0 7px 2px rgb(102, 255, 102, 0.4);
+		}
+
+		&__container {
+            display:flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            box-shadow:  0 0 10px 0 rgb(44, 146, 44) ;
+            padding: 10px;
+            font-size: 12px;
+            &:hover {
+                cursor: pointer;
+              }
+		}
+
+		&__question {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px 5px;
+		}
+
+
+
+		&__question-text {
+            margin-right: auto;
+		}
+
+		&__answer {
+            display: none;
+            justify-content: space-between;
+            background-color: rgb(102, 255, 102,0.2);
+            transition: 0.1s;
+            padding: 20px 5px;
+		}
+
+
+		&__answer-p {
+            margin-right: auto;
+		}
+
+}
+}

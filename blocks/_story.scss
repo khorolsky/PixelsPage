@@ -1,0 +1,109 @@
+.story {
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 100px;
+    padding: 20px 40px;
+    color: rgb(102, 255, 102, 0.6);
+    text-shadow: 2px 2px 3px;
+    &__content {
+        align-self:center;
+        p {
+            font-size: 17px;
+            line-height: 22px;
+        }
+    }
+
+    &__story-img {
+        padding: 20px;
+        align-self: center;
+        img {
+            margin:  0 auto;
+            max-width: 100%;
+            height: auto;
+            border: 3px dashed rgb(102, 255, 102, 0.5);
+            box-shadow: 0 0 5px 2px rgb(102, 255, 102);
+            opacity: 0.8;
+        }
+    }
+}
+.join {
+    grid-area: join;
+    display: block;
+    margin: 0;
+    padding: 30px;
+    button {
+        font-size: 30px;
+        text-transform: uppercase;
+        height: 100px;
+        width: 300px;
+        line-height: 40px;
+        border-radius: 30px;
+        color: rgb(102, 255, 102, 0.6);
+        text-shadow: 2px 2px 3px;
+        background-color: black;
+        box-shadow: 0 0 20px 2px rgb(102, 255, 102);
+        font-family: "Press Start 2P";
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.4s;
+            box-shadow: 0 0 30px 2px rgb(102, 255, 102);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .story {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 100px;
+        padding: 20px 40px;
+        color: rgb(102, 255, 102, 0.6);
+        text-shadow: 2px 2px 3px;
+        line-height: 40px;
+        align-items:end;
+
+        &__story-img {
+            padding: 20px;
+            margin-bottom: 110px;
+            img {
+                max-width: 100%;
+                height: auto;
+                border: 3px dashed rgb(102, 255, 102, 0.5);
+                box-shadow:  0 0 5px 2px rgb(102, 255, 102);
+                opacity: 0.8;
+            }
+            
+        }
+    }
+    .join {
+        grid-area: join;
+        display: block;
+        margin: 0;
+        padding: 30px;
+        button {
+            font-size: 25px;
+            text-transform: uppercase;
+            height: 100px;
+            width: 200px;
+            line-height: 40px;
+            border-radius: 30px;
+            color: rgb(102, 255, 102, 0.6);
+            text-shadow: 2px 2px 3px;
+            background-color: black;
+            box-shadow: 0 0 20px 2px rgb(102, 255, 102);
+            font-family: "Press Start 2P";
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.4s;
+                box-shadow: 0 0 30px 2px rgb(102, 255, 102);
+            }
+        }
+    }
+}

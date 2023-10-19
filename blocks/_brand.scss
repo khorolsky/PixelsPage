@@ -1,0 +1,102 @@
+.brand {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 150px;
+
+    &__strings {
+        text-transform: uppercase;
+        line-height: 40px;
+    }
+
+    &__container {
+        display: flex;
+        gap: 10px;
+        text-align: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        padding: 20px 40px;
+        color: rgb(102, 255, 102, 0.6);
+        text-shadow: 2px 2px 3px;
+        align-items: center;
+    }
+
+    &__content {
+        padding: 5px;
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            padding: 5px;
+        }
+    }
+
+    &__img {
+        margin: auto 0;
+        padding: 5px;
+        width: 40%;
+        img {
+            display: block;
+            margin: 0;
+            opacity: 0.8;
+        }
+    }
+}
+
+.strings {
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+@media (max-width: 730px) {
+    .brand {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 150px;
+        &__container {
+            font-size: 0.9em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1px;
+            text-align: center;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            margin: 0 auto;
+            padding: 10px 15px;
+            color: rgb(102, 255, 102, 0.6);
+            text-shadow: 2px 2px 3px;
+            align-items: center;
+        }
+
+        &__content {
+            padding: 5px;
+            h2 {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            p {
+                padding: 5px;
+            }
+        }
+
+        &__img {
+            margin: auto 0;
+            padding: 5px;
+            flex: 0 0 18.5em;
+            overflow: hidden;
+            img {
+                display: block;
+                max-width: 100%;
+                height: 100%;
+                margin: 0;
+                opacity: 0.8;
+            }
+        }
+    }
+    .strings {
+        text-transform: uppercase;
+        line-height: 40px;
+        font-size: 0.75em;
+    }
+}

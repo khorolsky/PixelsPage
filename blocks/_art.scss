@@ -1,0 +1,48 @@
+.art {
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 400px;
+    
+    // .art__ticker
+
+    &__ticker {
+        position: relative;
+        overflow: hidden;
+        padding: 30px;
+        @keyframes ticker {
+            0% {
+              transform: translateZ();
+            }
+            to {
+              transform: translate3d(-460%, 0, 0);
+        
+            }
+          }
+    }
+
+    // .art__wrapper
+
+    &__wrapper {
+        display: flex;
+    }
+
+    // .art__item
+
+    &__item {
+        padding: 30px;
+        font-family: sans-serif;
+        font-size: 70px;
+        font-weight: 500;
+        white-space: nowrap;
+        flex-shrink: 0;
+        padding: 0 50px;
+        animation: ticker 30s linear infinite;
+        box-shadow:inset 0 0 40px 10px rgb(102, 255, 102, 0.4);
+        img {
+            border: 3px solid rgb(102, 255, 102, 0.6);
+            margin: 0;
+            display: block;
+            box-shadow: 0 0 20px 0 rgb(102, 255, 102);
+        }
+    }
+}
